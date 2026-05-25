@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agro Forte, Futuro Sustentável</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#f4fff4;
+      color:#1f1f1f;
+      overflow-x:hidden;
+    }
+
+    header{
+      width:100%;
+      min-height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1600&auto=format&fit=crop') center/cover;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px;
+    }
+
+    .hero{
+      max-width:900px;
+      color:white;
+      animation:fadeIn 1.5s ease;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      margin-bottom:20px;
+      line-height:1.2;
+    }
+
+    .hero span{
+      color:#9cff57;
+    }
+
+    .hero p{
+      font-size:1.2rem;
+      margin-bottom:35px;
+      line-height:1.8;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#4CAF50;
+      color:white;
+      text-decoration:none;
+      border-radius:50px;
+      font-weight:600;
+      transition:0.4s;
+    }
+
+    .btn:hover{
+      background:#2e7d32;
+      transform:translateY(-3px);
+    }
+
+    section{
+      padding:90px 10%;
+    }
+
+    .titulo{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .titulo h2{
+      font-size:2.5rem;
+      color:#2e7d32;
+      margin-bottom:10px;
+    }
+
+    .titulo p{
+      color:#555;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      padding:35px;
+      border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      transition:0.4s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      color:#2e7d32;
+      font-size:1.4rem;
+    }
+
+    .card p{
+      color:#555;
+      line-height:1.7;
+    }
+
+    .sobre{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      align-items:center;
+      gap:50px;
+    }
+
+    .sobre img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .sobre-texto h2{
+      color:#2e7d32;
+      font-size:2.5rem;
+      margin-bottom:20px;
+    }
+
+    .sobre-texto p{
+      line-height:1.9;
+      color:#444;
+      margin-bottom:20px;
+    }
+
+    footer{
+      background:#1b5e20;
+      color:white;
+      text-align:center;
+      padding:30px;
+    }
+
+    footer p{
+      margin:8px 0;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:768px){
+      .hero h1{
+        font-size:2.5rem;
+      }
+
+      .hero p{
+        font-size:1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div class="hero">
+      <h1>
+        <span>AGRO FORTE</span><br>
+        FUTURO SUSTENTÁVEL
+      </h1>
+
+      <p>
+        Concurso de Programação promovido pelo SENAR-PR e SEED-PR,
+        incentivando tecnologia, inovação e sustentabilidade no campo,
+        buscando equilíbrio entre produção agrícola e preservação ambiental.
+      </p>
+
+      <a href="#sobre" class="btn">Saiba Mais</a>
+    </div>
+  </header>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="sobre">
+      <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop" alt="Agricultura sustentável">
+
+      <div class="sobre-texto">
+        <h2>Sobre o Concurso</h2>
+
+        <p>
+          O Serviço Nacional de Aprendizagem Rural (SENAR-PR) e a
+          Secretaria de Estado da Educação do Paraná (SEED-PR)
+          promovem o Concurso de Programação com o tema:
+          <strong>“Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente”.</strong>
+        </p>
+
+        <p>
+          O objetivo é incentivar estudantes a desenvolver soluções
+          tecnológicas inovadoras para o agronegócio sustentável,
+          utilizando criatividade, programação e consciência ambiental.
+        </p>
+
+        <a href="#" class="btn">Participar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMAS -->
+  <section>
+    <div class="titulo">
+      <h2>Temas do Projeto</h2>
+      <p>Tecnologia e sustentabilidade caminhando juntas.</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🌱 Sustentabilidade</h3>
+        <p>
+          Incentivar práticas agrícolas sustentáveis que preservem
+          os recursos naturais e garantam o futuro do planeta.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💻 Tecnologia</h3>
+        <p>
+          Utilização da programação e inovação digital para criar
+          soluções inteligentes no agronegócio.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🚜 Agro Forte</h3>
+        <p>
+          Fortalecer o campo através de ideias criativas que aumentem
+          produtividade com responsabilidade ambiental.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🌎 Meio Ambiente</h3>
+        <p>
+          Desenvolver consciência ecológica e incentivar o equilíbrio
+          entre produção agrícola e preservação ambiental.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OBJETIVOS -->
+  <section style="background:#e8f5e9;">
+    <div class="titulo">
+      <h2>Objetivos</h2>
+      <p>Construindo um futuro mais sustentável.</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🎯 Educação</h3>
+        <p>
+          Desenvolver habilidades em programação, lógica e inovação
+          tecnológica entre estudantes do Paraná.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🌿 Consciência Ambiental</h3>
+        <p>
+          Estimular projetos que contribuam para a preservação
+          ambiental e sustentabilidade agrícola.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🤝 Inovação</h3>
+        <p>
+          Promover integração entre educação, tecnologia e agronegócio
+          para transformar o futuro do campo.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Agro Forte, Futuro Sustentável</strong></p>
+    <p>Concurso de Programação • SENAR-PR & SEED-PR</p>
+    <p>© 2026 - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
